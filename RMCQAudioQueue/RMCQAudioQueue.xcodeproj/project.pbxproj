@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180BC3F11E7186A4004EB63B /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180BC3EF1E7186A4004EB63B /* libopencore-amrnb.a */; };
+		180BC3F21E7186A4004EB63B /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180BC3F01E7186A4004EB63B /* libopencore-amrwb.a */; };
+		180BC3F61E718826004EB63B /* RecordAmrCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC3F51E718826004EB63B /* RecordAmrCode.m */; };
+		180BC3FC1E71B7AC004EB63B /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC3F91E71B7AC004EB63B /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		180BC3FD1E71B7AC004EB63B /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC3FB1E71B7AC004EB63B /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		186B44B11E6EE1C00008095A /* Default-414w-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B44AF1E6EE1C00008095A /* Default-414w-736h@3x.png */; };
+		186B44B21E6EE1C00008095A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B44B01E6EE1C00008095A /* Default-375w-667h@2x.png */; };
+		18BB5EB31A552F650027D998 /* RMCQService.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB5EB21A552F650027D998 /* RMCQService.m */; };
+		18BB5EB61A5541B90027D998 /* RMCQClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB5EB51A5541B90027D998 /* RMCQClient.m */; };
+		18BB5EB81A554CC10027D998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BB5EB71A554CC10027D998 /* Main.storyboard */; };
+		18BB5EBB1A554DDD0027D998 /* RMCQHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB5EBA1A554DDD0027D998 /* RMCQHomeViewController.m */; };
+		18BB5EBE1A5553690027D998 /* RMCQServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB5EBD1A5553690027D998 /* RMCQServiceViewController.m */; };
+		18BB5EC11A55539D0027D998 /* RMCQClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB5EC01A55539D0027D998 /* RMCQClientViewController.m */; };
+		18BB5EC41A5569360027D998 /* RMCQMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB5EC31A5569360027D998 /* RMCQMessageViewController.m */; };
+		A8907C8718EBF6B800C9B780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907C8618EBF6B800C9B780 /* Foundation.framework */; };
+		A8907C8918EBF6B800C9B780 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907C8818EBF6B800C9B780 /* CoreGraphics.framework */; };
+		A8907C8B18EBF6B800C9B780 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907C8A18EBF6B800C9B780 /* UIKit.framework */; };
+		A8907C9118EBF6B800C9B780 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8907C8F18EBF6B800C9B780 /* InfoPlist.strings */; };
+		A8907C9318EBF6B800C9B780 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8907C9218EBF6B800C9B780 /* main.m */; };
+		A8907C9718EBF6B800C9B780 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8907C9618EBF6B800C9B780 /* AppDelegate.m */; };
+		A8907CA218EBF6B800C9B780 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8907CA118EBF6B800C9B780 /* Images.xcassets */; };
+		A8907CA918EBF6B800C9B780 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907CA818EBF6B800C9B780 /* XCTest.framework */; };
+		A8907CAA18EBF6B800C9B780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907C8618EBF6B800C9B780 /* Foundation.framework */; };
+		A8907CAB18EBF6B800C9B780 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907C8A18EBF6B800C9B780 /* UIKit.framework */; };
+		A8907CB318EBF6B800C9B780 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8907CB118EBF6B800C9B780 /* InfoPlist.strings */; };
+		A8907CBF18EBF72E00C9B780 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907CBE18EBF72E00C9B780 /* CoreAudio.framework */; };
+		A8907CC118EBF73800C9B780 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907CC018EBF73800C9B780 /* AudioToolbox.framework */; };
+		A8907CC318EBF74200C9B780 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8907CC218EBF74200C9B780 /* CoreFoundation.framework */; };
+		A8907CC918EBF89400C9B780 /* RMCQRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A8907CC818EBF89400C9B780 /* RMCQRecord.m */; };
+		A8907CD518EC08A700C9B780 /* RMCQPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = A8907CD418EC08A700C9B780 /* RMCQPlay.m */; };
+		A8AABD2D18ED2EF00079281B /* g726.c in Sources */ = {isa = PBXBuildFile; fileRef = A8AABD2B18ED2EF00079281B /* g726.c */; };
+		A8AABD3018ED2F1C0079281B /* g72x.c in Sources */ = {isa = PBXBuildFile; fileRef = A8AABD2E18ED2F1C0079281B /* g72x.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8907CAC18EBF6B800C9B780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8907C7B18EBF6B800C9B780 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8907C8218EBF6B800C9B780;
+			remoteInfo = RMCQAudioQueue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180BC3E91E7186A4004EB63B /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		180BC3EA1E7186A4004EB63B /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		180BC3EC1E7186A4004EB63B /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		180BC3ED1E7186A4004EB63B /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		180BC3EF1E7186A4004EB63B /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		180BC3F01E7186A4004EB63B /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		180BC3F41E718826004EB63B /* RecordAmrCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordAmrCode.h; sourceTree = "<group>"; };
+		180BC3F51E718826004EB63B /* RecordAmrCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordAmrCode.m; sourceTree = "<group>"; };
+		180BC3F81E71B7AC004EB63B /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		180BC3F91E71B7AC004EB63B /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		180BC3FA1E71B7AC004EB63B /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		180BC3FB1E71B7AC004EB63B /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		186B44AF1E6EE1C00008095A /* Default-414w-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-414w-736h@3x.png"; path = "../../TYDICIOS/Develop/Pre-sale_Guangxi_iPhone/Pre-sale_Guangxi_iPhone/Default-414w-736h@3x.png"; sourceTree = "<group>"; };
+		186B44B01E6EE1C00008095A /* Default-375w-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-375w-667h@2x.png"; path = "../../TYDICIOS/Develop/Pre-sale_Guangxi_iPhone/Pre-sale_Guangxi_iPhone/Default-375w-667h@2x.png"; sourceTree = "<group>"; };
+		18BAAE0A1EA9174500F0E764 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "amr_en_de/lib/libopencore-amrnb.a"; sourceTree = "<group>"; };
+		18BAAE0B1EA9174500F0E764 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrwb.a"; path = "amr_en_de/lib/libopencore-amrwb.a"; sourceTree = "<group>"; };
+		18BB5EB11A552F650027D998 /* RMCQService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCQService.h; sourceTree = "<group>"; };
+		18BB5EB21A552F650027D998 /* RMCQService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCQService.m; sourceTree = "<group>"; };
+		18BB5EB41A5541B90027D998 /* RMCQClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCQClient.h; sourceTree = "<group>"; };
+		18BB5EB51A5541B90027D998 /* RMCQClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCQClient.m; sourceTree = "<group>"; };
+		18BB5EB71A554CC10027D998 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		18BB5EB91A554DDD0027D998 /* RMCQHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCQHomeViewController.h; sourceTree = "<group>"; };
+		18BB5EBA1A554DDD0027D998 /* RMCQHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCQHomeViewController.m; sourceTree = "<group>"; };
+		18BB5EBC1A5553690027D998 /* RMCQServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCQServiceViewController.h; sourceTree = "<group>"; };
+		18BB5EBD1A5553690027D998 /* RMCQServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCQServiceViewController.m; sourceTree = "<group>"; };
+		18BB5EBF1A55539D0027D998 /* RMCQClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCQClientViewController.h; sourceTree = "<group>"; };
+		18BB5EC01A55539D0027D998 /* RMCQClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCQClientViewController.m; sourceTree = "<group>"; };
+		18BB5EC21A5569360027D998 /* RMCQMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCQMessageViewController.h; sourceTree = "<group>"; };
+		18BB5EC31A5569360027D998 /* RMCQMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCQMessageViewController.m; sourceTree = "<group>"; };
+		18BB5EE61A557D1B0027D998 /* N9MDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N9MDefine.h; sourceTree = "<group>"; };
+		A8907C8318EBF6B800C9B780 /* RMCQAudioQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMCQAudioQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8907C8618EBF6B800C9B780 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A8907C8818EBF6B800C9B780 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A8907C8A18EBF6B800C9B780 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A8907C8E18EBF6B800C9B780 /* RMCQAudioQueue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMCQAudioQueue-Info.plist"; sourceTree = "<group>"; };
+		A8907C9018EBF6B800C9B780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8907C9218EBF6B800C9B780 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8907C9418EBF6B800C9B780 /* RMCQAudioQueue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMCQAudioQueue-Prefix.pch"; sourceTree = "<group>"; };
+		A8907C9518EBF6B800C9B780 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8907C9618EBF6B800C9B780 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A8907CA118EBF6B800C9B780 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A8907CA718EBF6B800C9B780 /* RMCQAudioQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMCQAudioQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8907CA818EBF6B800C9B780 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A8907CB018EBF6B800C9B780 /* RMCQAudioQueueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMCQAudioQueueTests-Info.plist"; sourceTree = "<group>"; };
+		A8907CB218EBF6B800C9B780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8907CB418EBF6B800C9B780 /* RMCQAudioQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMCQAudioQueueTests.m; sourceTree = "<group>"; };
+		A8907CBE18EBF72E00C9B780 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		A8907CC018EBF73800C9B780 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A8907CC218EBF74200C9B780 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A8907CC718EBF89400C9B780 /* RMCQRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCQRecord.h; sourceTree = "<group>"; };
+		A8907CC818EBF89400C9B780 /* RMCQRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCQRecord.m; sourceTree = "<group>"; };
+		A8907CD318EC08A700C9B780 /* RMCQPlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCQPlay.h; sourceTree = "<group>"; };
+		A8907CD418EC08A700C9B780 /* RMCQPlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCQPlay.m; sourceTree = "<group>"; };
+		A8AABD2B18ED2EF00079281B /* g726.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = g726.c; sourceTree = "<group>"; };
+		A8AABD2C18ED2EF00079281B /* g726.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = g726.h; sourceTree = "<group>"; };
+		A8AABD2E18ED2F1C0079281B /* g72x.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = g72x.c; sourceTree = "<group>"; };
+		A8AABD2F18ED2F1C0079281B /* g72x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = g72x.h; sourceTree = "<group>"; };
+		A8AABD3118ED2F8E0079281B /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8907C8018EBF6B800C9B780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8907CC318EBF74200C9B780 /* CoreFoundation.framework in Frameworks */,
+				A8907CC118EBF73800C9B780 /* AudioToolbox.framework in Frameworks */,
+				180BC3F21E7186A4004EB63B /* libopencore-amrwb.a in Frameworks */,
+				A8907CBF18EBF72E00C9B780 /* CoreAudio.framework in Frameworks */,
+				A8907C8918EBF6B800C9B780 /* CoreGraphics.framework in Frameworks */,
+				180BC3F11E7186A4004EB63B /* libopencore-amrnb.a in Frameworks */,
+				A8907C8B18EBF6B800C9B780 /* UIKit.framework in Frameworks */,
+				A8907C8718EBF6B800C9B780 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8907CA418EBF6B800C9B780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8907CA918EBF6B800C9B780 /* XCTest.framework in Frameworks */,
+				A8907CAB18EBF6B800C9B780 /* UIKit.framework in Frameworks */,
+				A8907CAA18EBF6B800C9B780 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180BC3E61E7186A4004EB63B /* amr_en_de */ = {
+			isa = PBXGroup;
+			children = (
+				180BC3E71E7186A4004EB63B /* include */,
+				180BC3EE1E7186A4004EB63B /* lib */,
+			);
+			path = amr_en_de;
+			sourceTree = "<group>";
+		};
+		180BC3E71E7186A4004EB63B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				180BC3E81E7186A4004EB63B /* opencore-amrnb */,
+				180BC3EB1E7186A4004EB63B /* opencore-amrwb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		180BC3E81E7186A4004EB63B /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				180BC3E91E7186A4004EB63B /* interf_dec.h */,
+				180BC3EA1E7186A4004EB63B /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		180BC3EB1E7186A4004EB63B /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				180BC3EC1E7186A4004EB63B /* dec_if.h */,
+				180BC3ED1E7186A4004EB63B /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		180BC3EE1E7186A4004EB63B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				180BC3EF1E7186A4004EB63B /* libopencore-amrnb.a */,
+				180BC3F01E7186A4004EB63B /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		180BC3F31E718816004EB63B /* RecordAmrCode */ = {
+			isa = PBXGroup;
+			children = (
+				180BC3F41E718826004EB63B /* RecordAmrCode.h */,
+				180BC3F51E718826004EB63B /* RecordAmrCode.m */,
+			);
+			name = RecordAmrCode;
+			sourceTree = "<group>";
+		};
+		180BC3F71E71B78C004EB63B /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				180BC3F81E71B7AC004EB63B /* GCDAsyncSocket.h */,
+				180BC3F91E71B7AC004EB63B /* GCDAsyncSocket.m */,
+				180BC3FA1E71B7AC004EB63B /* GCDAsyncUdpSocket.h */,
+				180BC3FB1E71B7AC004EB63B /* GCDAsyncUdpSocket.m */,
+			);
+			name = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		18BB5EB01A5526680027D998 /* (Socket)Service&Client */ = {
+			isa = PBXGroup;
+			children = (
+				18BB5EB11A552F650027D998 /* RMCQService.h */,
+				18BB5EB21A552F650027D998 /* RMCQService.m */,
+				18BB5EB41A5541B90027D998 /* RMCQClient.h */,
+				18BB5EB51A5541B90027D998 /* RMCQClient.m */,
+			);
+			name = "(Socket)Service&Client";
+			sourceTree = "<group>";
+		};
+		18E543101A56DCE4000C31C4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18BB5EB91A554DDD0027D998 /* RMCQHomeViewController.h */,
+				18BB5EBA1A554DDD0027D998 /* RMCQHomeViewController.m */,
+				18BB5EBC1A5553690027D998 /* RMCQServiceViewController.h */,
+				18BB5EBD1A5553690027D998 /* RMCQServiceViewController.m */,
+				18BB5EBF1A55539D0027D998 /* RMCQClientViewController.h */,
+				18BB5EC01A55539D0027D998 /* RMCQClientViewController.m */,
+				18BB5EC21A5569360027D998 /* RMCQMessageViewController.h */,
+				18BB5EC31A5569360027D998 /* RMCQMessageViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		18E543111A56DD1B000C31C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18BB5EE61A557D1B0027D998 /* N9MDefine.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A8907C7A18EBF6B800C9B780 = {
+			isa = PBXGroup;
+			children = (
+				A8907C8C18EBF6B800C9B780 /* RMCQAudioQueue */,
+				A8907CAE18EBF6B800C9B780 /* RMCQAudioQueueTests */,
+				A8907C8518EBF6B800C9B780 /* Frameworks */,
+				A8907C8418EBF6B800C9B780 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8907C8418EBF6B800C9B780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8907C8318EBF6B800C9B780 /* RMCQAudioQueue.app */,
+				A8907CA718EBF6B800C9B780 /* RMCQAudioQueueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8907C8518EBF6B800C9B780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18BAAE0A1EA9174500F0E764 /* libopencore-amrnb.a */,
+				18BAAE0B1EA9174500F0E764 /* libopencore-amrwb.a */,
+				A8907CC218EBF74200C9B780 /* CoreFoundation.framework */,
+				A8907CC018EBF73800C9B780 /* AudioToolbox.framework */,
+				A8907CBE18EBF72E00C9B780 /* CoreAudio.framework */,
+				A8907C8618EBF6B800C9B780 /* Foundation.framework */,
+				A8907C8818EBF6B800C9B780 /* CoreGraphics.framework */,
+				A8907C8A18EBF6B800C9B780 /* UIKit.framework */,
+				A8907CA818EBF6B800C9B780 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8907C8C18EBF6B800C9B780 /* RMCQAudioQueue */ = {
+			isa = PBXGroup;
+			children = (
+				A8907C9518EBF6B800C9B780 /* AppDelegate.h */,
+				A8907C9618EBF6B800C9B780 /* AppDelegate.m */,
+				18BB5EB71A554CC10027D998 /* Main.storyboard */,
+				180BC3F31E718816004EB63B /* RecordAmrCode */,
+				18E543111A56DD1B000C31C4 /* Model */,
+				18E543101A56DCE4000C31C4 /* ViewController */,
+				A8907CD618EC0A2500C9B780 /* (AudioQueue)Record&play */,
+				180BC3E61E7186A4004EB63B /* amr_en_de */,
+				180BC3F71E71B78C004EB63B /* AsyncSocket */,
+				18BB5EB01A5526680027D998 /* (Socket)Service&Client */,
+				A8AABD2A18ED2ECC0079281B /* g726 */,
+				A8907CA118EBF6B800C9B780 /* Images.xcassets */,
+				A8907C8D18EBF6B800C9B780 /* Supporting Files */,
+			);
+			path = RMCQAudioQueue;
+			sourceTree = "<group>";
+		};
+		A8907C8D18EBF6B800C9B780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				186B44AF1E6EE1C00008095A /* Default-414w-736h@3x.png */,
+				186B44B01E6EE1C00008095A /* Default-375w-667h@2x.png */,
+				A8907C8E18EBF6B800C9B780 /* RMCQAudioQueue-Info.plist */,
+				A8907C8F18EBF6B800C9B780 /* InfoPlist.strings */,
+				A8907C9218EBF6B800C9B780 /* main.m */,
+				A8907C9418EBF6B800C9B780 /* RMCQAudioQueue-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8907CAE18EBF6B800C9B780 /* RMCQAudioQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8907CB418EBF6B800C9B780 /* RMCQAudioQueueTests.m */,
+				A8907CAF18EBF6B800C9B780 /* Supporting Files */,
+			);
+			path = RMCQAudioQueueTests;
+			sourceTree = "<group>";
+		};
+		A8907CAF18EBF6B800C9B780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8907CB018EBF6B800C9B780 /* RMCQAudioQueueTests-Info.plist */,
+				A8907CB118EBF6B800C9B780 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8907CD618EC0A2500C9B780 /* (AudioQueue)Record&play */ = {
+			isa = PBXGroup;
+			children = (
+				A8907CC718EBF89400C9B780 /* RMCQRecord.h */,
+				A8907CC818EBF89400C9B780 /* RMCQRecord.m */,
+				A8907CD318EC08A700C9B780 /* RMCQPlay.h */,
+				A8907CD418EC08A700C9B780 /* RMCQPlay.m */,
+			);
+			name = "(AudioQueue)Record&play";
+			sourceTree = "<group>";
+		};
+		A8AABD2A18ED2ECC0079281B /* g726 */ = {
+			isa = PBXGroup;
+			children = (
+				A8AABD2B18ED2EF00079281B /* g726.c */,
+				A8AABD2C18ED2EF00079281B /* g726.h */,
+				A8AABD2E18ED2F1C0079281B /* g72x.c */,
+				A8AABD2F18ED2F1C0079281B /* g72x.h */,
+				A8AABD3118ED2F8E0079281B /* private.h */,
+			);
+			name = g726;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8907C8218EBF6B800C9B780 /* RMCQAudioQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8907CB818EBF6B800C9B780 /* Build configuration list for PBXNativeTarget "RMCQAudioQueue" */;
+			buildPhases = (
+				A8907C7F18EBF6B800C9B780 /* Sources */,
+				A8907C8018EBF6B800C9B780 /* Frameworks */,
+				A8907C8118EBF6B800C9B780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RMCQAudioQueue;
+			productName = RMCQAudioQueue;
+			productReference = A8907C8318EBF6B800C9B780 /* RMCQAudioQueue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8907CA618EBF6B800C9B780 /* RMCQAudioQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8907CBB18EBF6B800C9B780 /* Build configuration list for PBXNativeTarget "RMCQAudioQueueTests" */;
+			buildPhases = (
+				A8907CA318EBF6B800C9B780 /* Sources */,
+				A8907CA418EBF6B800C9B780 /* Frameworks */,
+				A8907CA518EBF6B800C9B780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8907CAD18EBF6B800C9B780 /* PBXTargetDependency */,
+			);
+			name = RMCQAudioQueueTests;
+			productName = RMCQAudioQueueTests;
+			productReference = A8907CA718EBF6B800C9B780 /* RMCQAudioQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8907C7B18EBF6B800C9B780 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "刘超";
+				TargetAttributes = {
+					A8907C8218EBF6B800C9B780 = {
+						DevelopmentTeam = 89S6WK9DNJ;
+						ProvisioningStyle = Manual;
+					};
+					A8907CA618EBF6B800C9B780 = {
+						DevelopmentTeam = 89S6WK9DNJ;
+						ProvisioningStyle = Manual;
+						TestTargetID = A8907C8218EBF6B800C9B780;
+					};
+				};
+			};
+			buildConfigurationList = A8907C7E18EBF6B800C9B780 /* Build configuration list for PBXProject "RMCQAudioQueue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8907C7A18EBF6B800C9B780;
+			productRefGroup = A8907C8418EBF6B800C9B780 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8907C8218EBF6B800C9B780 /* RMCQAudioQueue */,
+				A8907CA618EBF6B800C9B780 /* RMCQAudioQueueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8907C8118EBF6B800C9B780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BB5EB81A554CC10027D998 /* Main.storyboard in Resources */,
+				186B44B11E6EE1C00008095A /* Default-414w-736h@3x.png in Resources */,
+				186B44B21E6EE1C00008095A /* Default-375w-667h@2x.png in Resources */,
+				A8907CA218EBF6B800C9B780 /* Images.xcassets in Resources */,
+				A8907C9118EBF6B800C9B780 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8907CA518EBF6B800C9B780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8907CB318EBF6B800C9B780 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8907C7F18EBF6B800C9B780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BC3F61E718826004EB63B /* RecordAmrCode.m in Sources */,
+				18BB5EBE1A5553690027D998 /* RMCQServiceViewController.m in Sources */,
+				A8907C9718EBF6B800C9B780 /* AppDelegate.m in Sources */,
+				A8907CD518EC08A700C9B780 /* RMCQPlay.m in Sources */,
+				18BB5EB61A5541B90027D998 /* RMCQClient.m in Sources */,
+				180BC3FC1E71B7AC004EB63B /* GCDAsyncSocket.m in Sources */,
+				18BB5EBB1A554DDD0027D998 /* RMCQHomeViewController.m in Sources */,
+				A8AABD2D18ED2EF00079281B /* g726.c in Sources */,
+				18BB5EB31A552F650027D998 /* RMCQService.m in Sources */,
+				A8907CC918EBF89400C9B780 /* RMCQRecord.m in Sources */,
+				A8907C9318EBF6B800C9B780 /* main.m in Sources */,
+				180BC3FD1E71B7AC004EB63B /* GCDAsyncUdpSocket.m in Sources */,
+				18BB5EC41A5569360027D998 /* RMCQMessageViewController.m in Sources */,
+				18BB5EC11A55539D0027D998 /* RMCQClientViewController.m in Sources */,
+				A8AABD3018ED2F1C0079281B /* g72x.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8907CA318EBF6B800C9B780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8907CAD18EBF6B800C9B780 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8907C8218EBF6B800C9B780 /* RMCQAudioQueue */;
+			targetProxy = A8907CAC18EBF6B800C9B780 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8907C8F18EBF6B800C9B780 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8907C9018EBF6B800C9B780 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A8907CB118EBF6B800C9B780 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8907CB218EBF6B800C9B780 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8907CB618EBF6B800C9B780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bin Lin (V87D9DNBL4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bin Lin (V87D9DNBL4)";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 89S6WK9DNJ;
+				ENABLE_BITCODE = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/amr_en_de/lib\"";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "9cb91653-ddda-412e-a6fa-8d52ca2ff163";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8907CB718EBF6B800C9B780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bin Lin (V87D9DNBL4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bin Lin (V87D9DNBL4)";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 89S6WK9DNJ;
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/amr_en_de/lib\"";
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "9cb91653-ddda-412e-a6fa-8d52ca2ff163";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8907CB918EBF6B800C9B780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bin Lin (V87D9DNBL4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bin Lin (V87D9DNBL4)";
+				DEVELOPMENT_TEAM = 89S6WK9DNJ;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMCQAudioQueue/RMCQAudioQueue-Prefix.pch";
+				INFOPLIST_FILE = "RMCQAudioQueue/RMCQAudioQueue-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_MAP_FILE_PATH = "";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/amr_en_de/lib\"";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.RMCQAudioQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9cb91653-ddda-412e-a6fa-8d52ca2ff163";
+				PROVISIONING_PROFILE_SPECIFIER = TestDemo;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A8907CBA18EBF6B800C9B780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bin Lin (V87D9DNBL4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bin Lin (V87D9DNBL4)";
+				DEVELOPMENT_TEAM = 89S6WK9DNJ;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMCQAudioQueue/RMCQAudioQueue-Prefix.pch";
+				INFOPLIST_FILE = "RMCQAudioQueue/RMCQAudioQueue-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_MAP_FILE_PATH = "";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/amr_en_de/lib\"";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.RMCQAudioQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9cb91653-ddda-412e-a6fa-8d52ca2ff163";
+				PROVISIONING_PROFILE_SPECIFIER = TestDemo;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A8907CBC18EBF6B800C9B780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RMCQAudioQueue.app/RMCQAudioQueue";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 89S6WK9DNJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMCQAudioQueue/RMCQAudioQueue-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RMCQAudioQueueTests/RMCQAudioQueueTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/amr_en_de/lib\"",
+					"$(PROJECT_DIR)/amr_en_de/lib",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A8907CBD18EBF6B800C9B780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RMCQAudioQueue.app/RMCQAudioQueue";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 89S6WK9DNJ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMCQAudioQueue/RMCQAudioQueue-Prefix.pch";
+				INFOPLIST_FILE = "RMCQAudioQueueTests/RMCQAudioQueueTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/amr_en_de/lib\"",
+					"$(PROJECT_DIR)/amr_en_de/lib",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8907C7E18EBF6B800C9B780 /* Build configuration list for PBXProject "RMCQAudioQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8907CB618EBF6B800C9B780 /* Debug */,
+				A8907CB718EBF6B800C9B780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8907CB818EBF6B800C9B780 /* Build configuration list for PBXNativeTarget "RMCQAudioQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8907CB918EBF6B800C9B780 /* Debug */,
+				A8907CBA18EBF6B800C9B780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8907CBB18EBF6B800C9B780 /* Build configuration list for PBXNativeTarget "RMCQAudioQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8907CBC18EBF6B800C9B780 /* Debug */,
+				A8907CBD18EBF6B800C9B780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8907C7B18EBF6B800C9B780 /* Project object */;
+}
